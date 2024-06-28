@@ -21,6 +21,7 @@ function generatePassword() {
         pass += charset.charAt(Math.floor(Math.random() * n))
     }
     containerPassword.classList.remove('hide');
+    
     password.innerHTML = pass;
     novaSenha = pass;
 }
@@ -28,6 +29,8 @@ function generatePassword() {
 function copyPassword() {
     alert('Senha copiada!')
     navigator.clipboard.writeText(novaSenha)
+    alert('Cole sua senha para não perder ela não sera mais visivel aqui.')
+    containerPassword.classList.add('hide')
 }
 
 
