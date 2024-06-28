@@ -29,7 +29,7 @@ function generatePassword() {
 function copyPassword() {
     alert('Senha copiada!')
     navigator.clipboard.writeText(novaSenha)
-    alert('Cole sua senha para não perder ela não sera mais visivel aqui.')
+    alert('Cole sua senha para não perder ela não será visivel aqui.')
     containerPassword.classList.add('hide')
 }
 
